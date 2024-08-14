@@ -1,4 +1,4 @@
-package state;
+package StatePattern;
 
 public class DocumentContext {
 

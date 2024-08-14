@@ -1,6 +1,6 @@
-package state;
+package StatePattern;
 
-import state.enums.DocumentState;
+import StatePattern.enums.DocumentState;
 
 @Deprecated
 public class DocumentService {

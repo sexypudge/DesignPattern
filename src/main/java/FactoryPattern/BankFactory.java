@@ -3,12 +3,12 @@ package FactoryPattern;
 import static FactoryPattern.BankType.TPBANK;
 import static FactoryPattern.BankType.VIETCOMBANK;
 
-public class BankFactory {
+public final class BankFactory {
 
     private BankFactory() {
     }
 
-    public static final Bank getBank(BankType bankType) {
+    public static Bank getBank(BankType bankType) {
         switch (bankType) {
             case TPBANK:
                 return new TPBank();

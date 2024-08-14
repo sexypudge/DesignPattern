@@ -1,6 +1,6 @@
-package state.impl;
+package StatePattern.impl;
 
-import state.State;
+import StatePattern.State;
 
 public class SubmittedState implements State {
     public void handleRequest() {
