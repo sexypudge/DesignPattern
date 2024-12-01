@@ -18,6 +18,7 @@ public class BuilderClient {
                 .orderType(OrderType.ON_SITE)
                 .build();
         System.out.println(order);
+        System.out.println();
 
         // immutable builder class
         BankAccount newAccount = new BankAccount
