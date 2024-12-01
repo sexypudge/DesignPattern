@@ -1,7 +1,8 @@
-package state;
+package StatePattern;
 
-import state.impl.NewState;
-import state.impl.SubmittedState;
+
+import StatePattern.impl.NewState;
+import StatePattern.impl.SubmittedState;
 
 public class DocumentApp {
 

@@ -1,4 +1,4 @@
-package state;
+package StatePattern;
 
 public interface State {
     void handleRequest();
