@@ -1,11 +1,10 @@
-package StrategyPattern.example;
+package practices.Strategy;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SortedList<T> {
 
-    private List<T> list = new ArrayList<>();
+    private final List<T> list;
     private final SortedStrategy sortedStrategy;
 
     public SortedList(List<T> list, SortedStrategy sortedStrategy) {
@@ -13,7 +12,7 @@ public class SortedList<T> {
         this.sortedStrategy = sortedStrategy;
     }
 
-    public void sort(){
+    public void sort() {
         sortedStrategy.sort(list);
     }
 }

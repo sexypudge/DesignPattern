@@ -1,13 +1,16 @@
 package ObserverPattern;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 public class AccountService implements Subject {
 
-    private User user;
+    private final User user;
 
-    private List<Observer> observers = new ArrayList<Observer>();
+    private final List<Observer> observers = new ArrayList<>();
 
     public AccountService(String email, String ip) {
         user = new User();
@@ -22,9 +25,7 @@ public class AccountService implements Subject {
     }
 
     public void detach(Observer observer) {
-        if (observers.contains(observer)) {
-            observers.remove(observer);
-        }
+        observers.remove(observer);
     }
 
     public void notifyAllObserver() {
@@ -35,7 +36,7 @@ public class AccountService implements Subject {
 
     public void changeStatus(LoginStatus status) {
         user.setStatus(status);
-        System.out.println("Status is changed");
+        log.info("Status is changed");
         this.notifyAllObserver();
     }
 
@@ -47,7 +48,8 @@ public class AccountService implements Subject {
         } else {
             user.setStatus(LoginStatus.FAILURE);
         }
-        System.out.println("Login handled");
+        log.info("Login handled");
+
         this.notifyAllObserver();
     }
 

@@ -2,7 +2,7 @@ package AdapterPattern;
 
 public class TranslationAdapter implements VietnameseTarget {
 
-    private JapaneseAdaptee japaneseAdaptee;
+    private final JapaneseAdaptee japaneseAdaptee;
 
     public TranslationAdapter(JapaneseAdaptee adaptee) {
         this.japaneseAdaptee = adaptee;

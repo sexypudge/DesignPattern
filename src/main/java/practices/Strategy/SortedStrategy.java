@@ -1,4 +1,4 @@
-package StrategyPattern.example;
+package practices.Strategy;
 
 import java.util.List;
 

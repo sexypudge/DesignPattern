@@ -5,7 +5,7 @@ import ObserverPattern.observers.Mailer;
 import ObserverPattern.observers.Protector;
 
 public class Main {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         AccountService account1 = createAccount("contact@luongnv.com", "127.0.0.1");
         account1.login();
         account1.changeStatus(LoginStatus.EXPIRED);

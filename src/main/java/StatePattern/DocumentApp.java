@@ -5,7 +5,7 @@ import StatePattern.impl.SubmittedState;
 
 public class DocumentApp {
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        DocumentService service = new DocumentService();
 //
 //        service.setDocumentState(DocumentState.NEW);
@@ -19,11 +19,11 @@ public class DocumentApp {
 
         // ============= new ==============
 
-        DocumentContext documentContext = new DocumentContext();
-        documentContext.setState(new NewState());
-        documentContext.applyState();
-
-        documentContext.setState(new SubmittedState());
-        documentContext.applyState();
-    }
+//        DocumentContext documentContext = new DocumentContext();
+//        documentContext.setState(new NewState());
+//        documentContext.applyState();
+//
+//        documentContext.setState(new SubmittedState());
+//        documentContext.applyState();
+//    }
 }
